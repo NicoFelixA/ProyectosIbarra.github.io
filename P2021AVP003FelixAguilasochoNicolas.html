@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+</head>
+<body>
+        <p>
+            4AVP Félix Aguilasocho Nicolás <br>
+            P2021AVP003 Menu despegable <br>
+            21325061070335 P003 01 Félix Aguilasocho Nicolás 4AVP <br>
+            nicolasfelixag@gmail.com <br>
+            09/02/2023 <br>
+        </p>
+        <h2>Menu despegable</h2>
+        <hr>
+        <form name="formulario1" target="_blank">
+            <ul>
+                <label>Elige una opción:</label>
+                <select name="destinos">
+                <li><label><option value="https://es.wikipedia.org/">Wikipedia</option></label></li>
+                <li><label><option value="https://www.youtube.com/">Youtube</option></label></li>
+                <li><label><option value="https://www.spotify.com/mx">Spotify</option></label></li>
+            </select>
+            <input type="button" value="Ir" onclick="window.open(formulario1.destinos.value, this.target, 'resizable=1 ,left=80pt,top=80pt,width=1100px,height=800px'); return false;" target="popup">
+            </ul>
+        </form>
+        <form name="formulario2" target="_blank">
+            <ul>
+                <label>Elige un parque de diversiones:</label>
+                <select name="Parques">
+                <li><label><option value="https://disneyland.disney.go.com/">Disneyland</option></label></li>
+                <li><label><option value="https://www.universalorlando.com/web/">Universal studios</option></label></li>
+                <li><label><option value="https://www.sixflags.com.mx/mexico">Six flags</option></label></li>
+            </select>
+            <input type="button" value="Ir" onclick="window.open(formulario2.Parques.value, this.target, 'resizable=1 ,left=80pt,top=80pt,width=1100px,height=800px'); return false;" target="popup">
+            </ul>
+        </form>
+        <form name="formulario3" target="_blank">
+            <ul>
+                <label>Elige una red social:</label>
+                <select name="RedesSociales">
+                <li><label><option value="https://www.instagram.com/">Instagram</option></label></li>
+                <li><label><option value="https://es-la.facebook.com/">Facebook</option></label></li>
+                <li><label><option value="https://www.spotify.com/mx">Spotify</option></label></li>
+            </select>
+            <input type="button" value="Ir" onclick="window.open(formulario3.RedesSociales.value, this.target, 'resizable=1 ,left=80pt,top=80pt,width=1100px,height=800px'); return false;" target="popup">
+            </ul>
+        </form>
+        <form name="formulario4" target="_blank">
+            <ul>
+                <label>Elige una tienda en línea:</label>
+                <select name="AplicacionesDeVentaEnLinea">
+                <li><label><option value="https://www.amazon.com.mx/?&">Amazon</option></label></li>
+                <li><label><option value="https://www.mercadolibre.com.mx/">Mercado libre</option></label></li>
+                <li><label><option value="https://www.walmart.com.mx/">Walmart</option></label></li>
+            </select>
+            <input type="button" value="Ir" onclick="window.open(formulario4.AplicacionesDeVentaEnLinea.value, this.target, 'resizable=1 ,left=80pt,top=80pt,width=1100px,height=800px'); return false;" target="popup">
+            </ul>
+        </form>
+        
+</body>
+</html>
