@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>P2021AVP005Transiciones</title>
+    <style>
+        header{
+            text-align: center;
+            color: white;
+            background-color: burlywood;
+            padding: 30px;
+            transition-duration: 1s;
+        }
+        header:hover{
+            color: black;
+            font-size: larger;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        nav{
+            background-color: rgb(168, 117, 80);
+            padding: 20px;
+            width: 20%;
+            height: 300px;
+            font-size: 15px;
+            float: left;
+            transition-duration: 1s;
+
+        }
+        nav:hover{
+            width: 100%;
+            font-size: x-large;
+            color: black;
+            font-size: 30px;
+                
+            
+        }
+        
+        article{
+            background-color: rgb(189, 139, 115);
+            padding: 20px;
+            width: 75%;
+            height: 300px;
+            float: left;
+            font-size: larger;
+        }
+     
+        section::after{
+            clear: both;
+            display: table;
+            content: "";
+        }
+        footer{
+            background-color: rgb(228, 195, 165);
+            padding: 20px;
+            height: 100px;
+            text-align: center;
+            color: black;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            
+        }
+        #Lorem{
+			 font-size: large;
+		 }
+		 #Lorem:hover {
+			 font-size: x-large;
+			 border: medium solid white;				
+			 background-color: rgb(209, 138, 6);
+			 color: white;
+			 padding: 4px;
+			 -webkit-transition-delay: 100ms;
+			 -webkit-transition-property: background-color, color, padding,
+				 font-size, border;
+			 -webkit-transition-duration: 500ms;				
+		 }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Transiciones</h1>
+    </header>
+    <section>
+        <nav>
+        <ul>
+            <li>Portafolio</li>
+            <li>Index</li>
+            <li>Y más</li>
+        </ul>
+    </nav>
+    <article>
+        <h3>INICIO</h3>
+        <span id="Lorem">Lorem</span> ipsum dolor sit amet, consectetur adipisicing elit. Totam ipsa consequatur at, itaque quibusdam qui facilis, eius repudiandae sunt, inventore hic obcaecati nemo reprehenderit earum consequuntur commodi. Nobis, iure vitae?Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni delectus asperiores praesentium atque eveniet, consequatur ducimus sed consectetur id facilis. Error nesciunt in quod veritatis voluptatibus adipisci inventore necessitatibus tempore!
+        
+    </article>
+</section>
+    
+    
+    <footer>
+        <p>Félix Aguilasocho Nicolás &copy; 23/02/2023</p>
+        
+    </footer>
+    
+</body>
+</html>
