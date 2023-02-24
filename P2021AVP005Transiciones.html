@@ -6,6 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>P2021AVP005Transiciones</title>
     <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            font-style: Arial, Helvetica, sans-serif;
+        }
         header{
             text-align: center;
             color: white;
@@ -22,7 +28,7 @@
             background-color: rgb(168, 117, 80);
             padding: 20px;
             width: 20%;
-            height: 300px;
+            height: 500px;
             font-size: 15px;
             float: left;
             transition-duration: 1s;
@@ -36,16 +42,40 @@
                 
             
         }
-        
+        .boton {
+        background-color: rgb(158, 118, 9);
+        color: white;
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        font-size: 16px;
+        transition: background-color 0.5s, transform 0.5s;
+    }
+    
+    .boton:hover {
+        background-color: rgb(75, 57, 0);
+        transform: scale(1.2);
+        cursor: pointer;
+    }
         article{
             background-color: rgb(189, 139, 115);
             padding: 20px;
-            width: 75%;
-            height: 300px;
+            width: 80%;
+            height: 500px;
             float: left;
             font-size: larger;
         }
-     
+        #imagen {
+			width: 200px;
+			height: 200px;
+			transition: transform 0.5s;
+		}
+
+		#imagen:hover {
+			transform: scale(1.2);
+			cursor: pointer;
+		}
+
         section::after{
             clear: both;
             display: table;
@@ -54,7 +84,7 @@
         footer{
             background-color: rgb(228, 195, 165);
             padding: 20px;
-            height: 100px;
+            height: 200px;
             text-align: center;
             color: black;
             font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -74,6 +104,34 @@
 				 font-size, border;
 			 -webkit-transition-duration: 500ms;				
 		 }
+         #li{
+			color: green;
+			transition: color 0.5s;
+		}
+
+		#li:hover {
+			color: red;
+			cursor: pointer;
+		}
+        #caja {
+			background-color: rgb(92, 63, 0);
+			color: white;
+			width: 100px;
+			height: 100px;
+			position: relative;
+			left: 0;
+			top: 0;
+			transition: background-color 0.5s, transform 0.5s, opacity 0.5s, left 0.5s, top 0.5s;
+		}
+
+		#caja:hover {
+			background-color: rgb(255, 242, 55);
+			transform: rotate(45deg);
+			opacity: 0.5;
+			left: 100px;
+			top: 100px;
+			cursor: pointer;
+		}
     </style>
 </head>
 <body>
@@ -83,21 +141,30 @@
     <section>
         <nav>
         <ul>
-            <li>Portafolio</li>
-            <li>Index</li>
-            <li>Y más</li>
+            <li><a id="enlace" href="#">Clickea</a></li>
+            <li><a id="enlace" href="#">Para</a></li>
+            <li><a id="enlace" href="#">Transiciones</a></li>        
+            <br><br>
+            <img id="imagen" src="https://via.placeholder.com/200">
+
         </ul>
     </nav>
     <article>
         <h3>INICIO</h3>
-        <span id="Lorem">Lorem</span> ipsum dolor sit amet, consectetur adipisicing elit. Totam ipsa consequatur at, itaque quibusdam qui facilis, eius repudiandae sunt, inventore hic obcaecati nemo reprehenderit earum consequuntur commodi. Nobis, iure vitae?Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni delectus asperiores praesentium atque eveniet, consequatur ducimus sed consectetur id facilis. Error nesciunt in quod veritatis voluptatibus adipisci inventore necessitatibus tempore!
+        <span id="Lorem"><b>Lorem</b></span> ipsum dolor sit amet, consectetur adipisicing elit. Totam ipsa consequatur at, itaque quibusdam qui facilis, eius repudiandae sunt, inventore hic obcaecati nemo reprehenderit earum consequuntur commodi. Nobis, iure vitae?Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni delectus asperiores praesentium atque eveniet, consequatur ducimus sed consectetur id facilis. Error nesciunt in quod veritatis voluptatibus adipisci inventore necessitatibus tempore!
+        <br><br>
+        <button class="boton">Haz clic en mí</button>   
+        <br><br>
+        <div id="caja">Caja</div>
+
         
     </article>
 </section>
     
-    
+
+
     <footer>
-        <p>Félix Aguilasocho Nicolás &copy; 23/02/2023</p>
+        <marquee>Félix Aguilasocho Nicolás &copy; 23/02/2023</marquee>
         
     </footer>
     
