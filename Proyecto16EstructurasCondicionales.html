@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Proyecto 016 </title>
+</head>
+<body>
+	<p>
+		      4AVP Felix Aguilasocho Nicolas <br>
+			  P2021AVP016 Estructuras condicionales<br>
+			 
+			</p>
+			<hr> 
+
+	<script>
+		function TipoDeColor(){
+			var color =document.getElementById('colores');
+			var valor = color.value;
+			if(valor=="blanco"){
+				alert("Escogiste el color blanco(#FFFFFF)");
+			}
+			else if(valor=="negro"){
+				alert("Escogiste el color negro(#000000)")
+			}
+			else if(valor=="azul"){
+				alert("Escogiste el color azul(#0000FF)");
+			}
+			else{
+				alert("Escogiste el color rojo(#FF0000)");
+			}
+		}
+		
+		function Numeros() {
+			var num = document.getElementById('numeros');
+			var value = num.value;
+			switch (value){
+			case("2"): 
+				alert("Elegiste el número 2");
+				break;
+			case("4"):
+				alert("Elegiste el número 4");
+				break;
+			case("6"):
+				alert("Elegiste el número 6");
+				break;
+			case("8"):
+				alert("Elegiste el número 8");
+				break;
+			}
+		}
+
+		 function verificarCalificacion() {
+   		 var numero = document.getElementById("numeroInput").value;
+
+   			 if (numero == 7) {
+   			 alert("Regular");
+   			 } else if (numero == 8) {
+    		 alert("Bueno");
+    		 } else if (numero == 9) {
+   			 alert("Muy bien");
+    		 } else if (numero == 10) {
+      		 alert("Excelente");
+    		 } else if (numero < 5) {
+      		 alert("Reprobado");
+    		 } else {
+      		 alert("Reprobado");
+    		}
+  		}
+	</script>
+
+	<label>Selecciona un color: </label>
+	<select id="colores">
+	<option value="blanco">Blanco </option>
+	<option value="negro">Negro</option>
+	<option value="azul">Azul</option>
+	<option value="rojo">Rojo</option>
+	</select>
+	<button onclick="TipoDeColor()">Enviar</button> <br><br>
+
+	<label>Selecciona un número: </label>
+	<select id="numeros">
+	<option value="2">2</option>
+	<option value="4">4</option>
+	<option value="6">6</option>
+	<option value="8">8</option>
+	</select>
+	<button onclick="Numeros()">Enviar</button><br>
+     
+    <h4>Escribe tu promedio del parcial</h4>
+	<input type="number" id="numeroInput">
+    <button onclick="verificarCalificacion()">Verificar</button>
+
+</body>
+</html>
+
