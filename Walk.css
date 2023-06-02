@@ -1,0 +1,12 @@
+@keyframes walk {
+    from{
+        left:0;
+    }to{
+        left: 100%;
+    }
+    
+}
+img{
+    animation:walk 7s linear infinite;
+    position: absolute;
+}
